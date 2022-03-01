@@ -29,8 +29,9 @@ namespace WebSchool.Controllers
         }
 
         // GET: api/Users/auth
-        [HttpGet("{email}")]
-        public async Task<ActionResult<User>> GetUser(string email, string password)
+        [HttpGet]
+        [Route("auth")]
+        public async Task<ActionResult<User>> Auth(string email, string password)
         {
             var thisUser = _context.Users.FirstOrDefault(user => user.Email == email);
 
