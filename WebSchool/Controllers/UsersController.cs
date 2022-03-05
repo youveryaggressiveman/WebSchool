@@ -40,7 +40,7 @@ namespace WebSchool.Controllers
                 return NotFound();
             }
 
-            if (Encrypt.VerifyHashedPassword(password, thisUser.Password))
+            if (Encrypt.VerifyHashedPassword(thisUser.Password, password))
             {
                 return Ok(thisUser);
             }

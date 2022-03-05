@@ -16,18 +16,18 @@ namespace WebSchool.Entity
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string SecondName { get; set; }
-        public string? LastName { get; set; }
+        public string LastName { get; set; }
         public string Uuid { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
         public int AddressId { get; set; }
         public int PassportId { get; set; }
         public int RoleId { get; set; }
+        public string Code { get; set; }
 
         public virtual Address Address { get; set; }
         public virtual Passport Passport { get; set; }
         public virtual Role Role { get; set; }
-
         [JsonIgnore]
         public virtual ICollection<Student> Students { get; set; }
     }

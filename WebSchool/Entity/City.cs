@@ -18,7 +18,6 @@ namespace WebSchool.Entity
         public int CountryId { get; set; }
 
         public virtual Country Country { get; set; }
-
         [JsonIgnore]
         public virtual ICollection<Address> Addresses { get; set; }
     }

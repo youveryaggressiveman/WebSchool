@@ -332,6 +332,8 @@ namespace WebSchool.Entity
 
                 entity.Property(e => e.AddressId).HasColumnName("AddressID");
 
+                entity.Property(e => e.Code).HasMaxLength(8);
+
                 entity.Property(e => e.Email)
                     .IsRequired()
                     .HasMaxLength(50);
@@ -340,9 +342,7 @@ namespace WebSchool.Entity
                     .IsRequired()
                     .HasMaxLength(50);
 
-                entity.Property(e => e.LastName)
-                    .IsRequired()
-                    .HasMaxLength(50);
+                entity.Property(e => e.LastName).HasMaxLength(50);
 
                 entity.Property(e => e.PassportId).HasColumnName("PassportID");
 
