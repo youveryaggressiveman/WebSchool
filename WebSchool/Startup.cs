@@ -28,14 +28,22 @@ namespace WebSchool
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            services.AddControllers().AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.PropertyNamingPolicy = null;
+            });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebSchool", Version = "v1" });
             });
 
             services.AddDbContext<SchoolContext>(options =>
-       options.UseSqlServer("Server=10.200.2.53\\SQLEXPRESS01;Initial Catalog=School;Persist Security Info=False;User ID=administrator;Password=Bdc@6!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;"));
+            {
+                options.UseSqlServer(@"Server=DESKTOP-1C1RNHU\GGSERVER;Database=School;Trusted_Connection=True;");
+                //options.UseSqlServer("Server=10.200.2.53\\SQLEXPRESS01;Initial Catalog=School;Persist Security Info=False;User ID=administrator;Password=Bdc@6!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;"));
+            });
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

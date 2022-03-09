@@ -33,7 +33,12 @@ namespace WebSchool.Controllers
         [Route("auth")]
         public async Task<ActionResult<User>> Auth(string email, string password)
         {
-            var thisUser = _context.Users.FirstOrDefault(user => user.Email == email);
+            var thisUser = _context.Users.Include(e=>e.Address)
+                .ThenInclude(e=>e.City)
+                .ThenInclude(e=>e.Country)
+                .Include(e=>e.Role)
+                .Include(e=>e.Passport)
+                .FirstOrDefault(user => user.Email == email);
 
             if (thisUser == null)
             {

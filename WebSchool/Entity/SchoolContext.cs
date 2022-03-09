@@ -38,7 +38,9 @@ namespace WebSchool.Entity
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=10.200.2.53\\SQLEXPRESS01;Initial Catalog=School;Persist Security Info=False;User ID=administrator;Password=Bdc@6!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;");
+                optionsBuilder.UseSqlServer(@"Server=DESKTOP-1C1RNHU\GGSERVER;Database=School;Trusted_Connection=True;");
+                //optionsBuilder.UseSqlServer("Server=10.200.2.53\\SQLEXPRESS01;Initial Catalog=School;Persist Security Info=False;User ID=administrator;Password=Bdc@6!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;");
+                optionsBuilder.UseLazyLoadingProxies(true);
             }
         }
 
