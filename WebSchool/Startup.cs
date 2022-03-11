@@ -39,9 +39,9 @@ namespace WebSchool
 
             services.AddDbContext<SchoolContext>(options =>
             {
-                options.UseSqlServer(@"Server=DESKTOP-1C1RNHU\GGSERVER;Database=School;Trusted_Connection=True;");
-                //options.UseSqlServer("Server=10.200.2.53\\SQLEXPRESS01;Initial Catalog=School;Persist Security Info=False;User ID=administrator;Password=Bdc@6!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;"));
-            });
+            //options.UseSqlServer(@"Server=DESKTOP-1C1RNHU\GGSERVER;Database=School;Trusted_Connection=True;");
+            options.UseSqlServer("Server=10.200.2.53\\SQLEXPRESS01;Initial Catalog=School;Persist Security Info=False;User ID=administrator;Password=Bdc@6!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;");
+        });
 
 
         }
