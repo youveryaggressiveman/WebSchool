@@ -29,7 +29,8 @@ namespace SchoolApp.Application.Models.Users.Commands.CreateUser
                 LastName = request.LastName,
                 Code = request.Code,
                 Address = request.Address,
-                Passport = request.Passport
+                Passport = request.Passport,
+                RoleID = 3
             };
 
             await _dbContext.Users.AddAsync(user, cancellationToken);

@@ -17,7 +17,7 @@ namespace SchoolApp.Persistence.EntityTypeConfigurations
             builder.HasIndex(student => student.NumberStudentTicket).IsUnique();
 
             builder.HasOne(student => student.Group).WithMany().IsRequired();
-            builder.HasOne(student => student.User).WithMany().IsRequired();
+            builder.HasOne(student => student.User).WithMany().IsRequired().OnDelete(DeleteBehavior.NoAction);
         }
     }
 }

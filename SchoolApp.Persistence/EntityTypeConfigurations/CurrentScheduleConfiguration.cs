@@ -15,12 +15,11 @@ namespace SchoolApp.Persistence.EntityTypeConfigurations
         {
             builder.HasKey(currentSchedule => currentSchedule.ID);
             builder.HasIndex(currentSchedule => currentSchedule.ID).IsUnique();
-
-            builder.HasOne(currentSchedule => currentSchedule.Group).WithMany().IsRequired();
-            builder.HasOne(currentSchedule => currentSchedule.Subject).WithMany().IsRequired();
-            builder.HasOne(currentSchedule => currentSchedule.TimeSubject).WithMany().IsRequired();
-            builder.HasOne(currentSchedule => currentSchedule.Employee).WithMany().IsRequired();
-            builder.HasOne(currentSchedule => currentSchedule.DayOfWeek).WithMany().IsRequired();
+            builder.HasOne(currentSchedule => currentSchedule.Group).WithMany().OnDelete(DeleteBehavior.NoAction);
+            builder.HasOne(currentSchedule => currentSchedule.Subject).WithMany().OnDelete(DeleteBehavior.NoAction);
+            builder.HasOne(currentSchedule => currentSchedule.TimeSubject).WithMany().OnDelete(DeleteBehavior.NoAction);
+            builder.HasOne(currentSchedule => currentSchedule.DayOfWeek).WithMany().OnDelete(DeleteBehavior.NoAction);
+            builder.HasOne(currentSchedule => currentSchedule.Employee).WithMany().OnDelete(DeleteBehavior.NoAction);
         }
     }
 }

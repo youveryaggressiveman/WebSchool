@@ -17,7 +17,7 @@ namespace SchoolApp.Persistence.EntityTypeConfigurations
             builder.HasIndex(group => group.ID).IsUnique();
 
             builder.Property(group => group.Name).HasMaxLength(50).IsRequired();
-            builder.HasOne(group => group.Curator).WithMany().IsRequired();
+            builder.HasOne(group => group.Curator).WithMany();
         }
     }
 }

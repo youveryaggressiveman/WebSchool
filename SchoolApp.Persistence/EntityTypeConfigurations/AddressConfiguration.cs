@@ -18,7 +18,6 @@ namespace SchoolApp.Persistence.EntityTypeConfigurations
 
             builder.Property(address => address.AddressName).HasMaxLength(50).IsRequired();
             builder.Property(address => address.AddressNumber).HasMaxLength(50).IsRequired();
-            builder.HasOne(address => address.City).WithMany().IsRequired();
         }
     }
 }

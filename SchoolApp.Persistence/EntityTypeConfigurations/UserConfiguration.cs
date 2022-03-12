@@ -17,11 +17,12 @@ namespace SchoolApp.Persistence.EntityTypeConfigurations
             builder.HasIndex(user => user.ID).IsUnique();
 
             builder.Property(user => user.Email).HasMaxLength(50).IsRequired();
-            builder.Property(user => user.Password).HasMaxLength(50).IsRequired();
+            builder.Property(user => user.Password).IsRequired();
             builder.Property(user => user.FirstName).HasMaxLength(50).IsRequired();
             builder.Property(user => user.SecondName).HasMaxLength(50).IsRequired();
             builder.Property(user => user.LastName).HasMaxLength(50);
             builder.Property(user => user.Code).HasMaxLength(10);
+
             builder.HasOne(user => user.Role).WithMany().IsRequired();
             builder.HasOne(user => user.Passport).WithMany().IsRequired();
             builder.HasOne(user => user.Address).WithMany().IsRequired();

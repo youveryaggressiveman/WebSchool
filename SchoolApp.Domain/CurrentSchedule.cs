@@ -16,10 +16,10 @@ namespace SchoolApp.Domain
         public int TimeSubjectID { get; set; }
         public int SubjectID { get; set; }
 
-        public Group Group { get; set; }
-        public Employee Employee { get; set; }
-        public DayOfWeek DayOfWeek { get; set; }
-        public TimeSubject TimeSubject { get; set; }
-        public Subject Subject { get; set; }
+        public virtual Group Group { get; set; }
+        public virtual Employee Employee { get; set; }
+        public virtual DayOfWeek DayOfWeek { get; set; }
+        public virtual TimeSubject TimeSubject { get; set; }
+        public virtual Subject Subject { get; set; }
     }
 }

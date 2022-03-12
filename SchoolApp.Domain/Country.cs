@@ -10,5 +10,7 @@ namespace SchoolApp.Domain
     {
         public int ID { get; set; }
         public string Name { get; set; }
+
+        public virtual ICollection<City> Cities { get; set; }
     }
 }

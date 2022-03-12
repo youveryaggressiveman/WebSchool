@@ -49,7 +49,7 @@ namespace SchoolApp.Persistence
             builder.ApplyConfiguration(new CityConfiguration());
             builder.ApplyConfiguration(new AddressConfiguration());
 
-            OnModelCreating(builder);
+            base.OnModelCreating(builder);
         } 
     }
 }

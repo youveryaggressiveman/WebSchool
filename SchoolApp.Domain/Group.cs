@@ -13,6 +13,6 @@ namespace SchoolApp.Domain
 
         public Guid CuratorID { get; set; }
 
-        public Employee Curator { get; set; }
+        public virtual Employee Curator { get; set; }
     }
 }

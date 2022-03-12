@@ -12,8 +12,6 @@ namespace SchoolApp.Domain
         public string AddressName { get; set;}
         public string AddressNumber { get; set; }
 
-        public int CityID { get; set; }
-
-        public City City { get; set;}
+        public virtual ICollection<City> City { get; set;}
     }
 }

@@ -17,7 +17,6 @@ namespace SchoolApp.Persistence.EntityTypeConfigurations
             builder.HasIndex(city => city.ID).IsUnique();
 
             builder.Property(city => city.Name).HasMaxLength(50).IsRequired();
-            builder.HasOne(city => city.Country).WithMany().IsRequired();
         }
     }
 }

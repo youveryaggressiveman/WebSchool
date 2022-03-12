@@ -11,13 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{9E63A2
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{DC2482CC-6BCA-4523-8A34-3E761DA48835}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolApp.Domain", "SchoolApp.Domain\SchoolApp.Domain.csproj", "{E3C637EC-0D9D-48B3-9556-29AF0BCD02A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolApp.Domain", "SchoolApp.Domain\SchoolApp.Domain.csproj", "{E3C637EC-0D9D-48B3-9556-29AF0BCD02A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolApp.Application", "SchoolApp.Application\SchoolApp.Application.csproj", "{43F97599-3278-4AE7-B1B2-4500B7D49663}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolApp.Application", "SchoolApp.Application\SchoolApp.Application.csproj", "{43F97599-3278-4AE7-B1B2-4500B7D49663}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolApp.Persistence", "SchoolApp.Persistence\SchoolApp.Persistence.csproj", "{92799F97-52D5-4B1E-A179-6FF0E381034C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolApp.Persistence", "SchoolApp.Persistence\SchoolApp.Persistence.csproj", "{92799F97-52D5-4B1E-A179-6FF0E381034C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolApp.WebApi", "SchoolApp.WebApi\SchoolApp.WebApi.csproj", "{81BB1DCD-B552-480A-8C4D-4A6BDC751E97}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolApp.Api", "SchoolApp.Api\SchoolApp.Api.csproj", "{F026B979-17EC-4FAA-937B-7B30FA14092E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +37,10 @@ Global
 		{92799F97-52D5-4B1E-A179-6FF0E381034C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92799F97-52D5-4B1E-A179-6FF0E381034C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92799F97-52D5-4B1E-A179-6FF0E381034C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{81BB1DCD-B552-480A-8C4D-4A6BDC751E97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{81BB1DCD-B552-480A-8C4D-4A6BDC751E97}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{81BB1DCD-B552-480A-8C4D-4A6BDC751E97}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{81BB1DCD-B552-480A-8C4D-4A6BDC751E97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F026B979-17EC-4FAA-937B-7B30FA14092E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F026B979-17EC-4FAA-937B-7B30FA14092E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F026B979-17EC-4FAA-937B-7B30FA14092E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F026B979-17EC-4FAA-937B-7B30FA14092E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,7 +49,7 @@ Global
 		{E3C637EC-0D9D-48B3-9556-29AF0BCD02A8} = {9E63A2C6-5CD1-4646-B3DD-632EFD48C301}
 		{43F97599-3278-4AE7-B1B2-4500B7D49663} = {A7CD5EE5-0CA6-40E8-AD91-C43C91499DB9}
 		{92799F97-52D5-4B1E-A179-6FF0E381034C} = {DC2482CC-6BCA-4523-8A34-3E761DA48835}
-		{81BB1DCD-B552-480A-8C4D-4A6BDC751E97} = {108E4DCC-2FE4-40AB-BC52-5B4B849095EC}
+		{F026B979-17EC-4FAA-937B-7B30FA14092E} = {108E4DCC-2FE4-40AB-BC52-5B4B849095EC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5CD7EAFB-A004-4DC2-BCAF-8751F96A2414}

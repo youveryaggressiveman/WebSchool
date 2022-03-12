@@ -1,8 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <TargetFramework>net5.0</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,10 +19,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Common\Exceptions\" />
+    <Folder Include="Models\Addresses\Commands\CreateAddress\" />
+    <Folder Include="Models\Cities\Commands\" />
+    <Folder Include="Models\Countries\Commands\" />
+    <Folder Include="Models\Employees\Commands\DeleteEmployee\" />
+    <Folder Include="Models\Employees\Commands\CreateEmployee\" />
+    <Folder Include="Models\Employees\Commands\UpdateEmployee\" />
     <Folder Include="Models\Users\Commands\DeleteUser\" />
     <Folder Include="Models\Users\Commands\UpdateUser\" />
-    <Folder Include="Models\Users\Queries\GetUserDetails\" />
   </ItemGroup>
 
 </Project>
