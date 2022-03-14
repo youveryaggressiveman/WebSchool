@@ -33,8 +33,8 @@ namespace SchoolApp.Application.Models.Employees.Queries.GetEmployeeDetails
                     opt => opt.MapFrom(employeeVm => employeeVm.User.SecondName))
                 .ForMember(employee => employee.LastName,
                     opt => opt.MapFrom(employeeVm => employeeVm.User.LastName))
-                .ForMember(employee=>employee.Role, 
-                    opt=>opt.MapFrom(employeeVm=>employeeVm.User.Role.Name))
+                .ForMember(employee => employee.Role,
+                    opt => opt.MapFrom(employeeVm => employeeVm.User.Role.Name))
                 .ForMember(employee => employee.UserID,
                     opt => opt.MapFrom(employeeVm => employeeVm.UserID));
         }

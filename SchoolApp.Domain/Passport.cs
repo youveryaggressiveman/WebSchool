@@ -9,7 +9,7 @@ namespace SchoolApp.Domain
     public class Passport
     {
         public int ID { get; set; }
-        public string PassportName { get; set;}
+        public string PassportSerial { get; set;}
         public string PassportNumber { get; set; }
         public DateTime DateBirth { get; set; }
     }

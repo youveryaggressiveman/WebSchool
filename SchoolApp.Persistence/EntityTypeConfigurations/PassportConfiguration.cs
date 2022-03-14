@@ -16,7 +16,7 @@ namespace SchoolApp.Persistence.EntityTypeConfigurations
             builder.HasKey(passport => passport.ID);
             builder.HasIndex(passport => passport.ID).IsUnique();
 
-            builder.Property(passport => passport.PassportName).HasMaxLength(20).IsRequired();
+            builder.Property(passport => passport.PassportSerial).HasMaxLength(20).IsRequired();
             builder.Property(passport => passport.PassportNumber).HasMaxLength(20).IsRequired();
             builder.Property(passport => passport.DateBirth).IsRequired();
         }

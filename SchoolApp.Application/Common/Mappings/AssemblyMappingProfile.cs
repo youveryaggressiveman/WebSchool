@@ -18,6 +18,7 @@ namespace SchoolApp.Application.Common.Mappings
             var types = assembly.GetExportedTypes()
                 .Where(type => type.GetInterfaces()
                 .Any(i => i.IsGenericType &&
+                
                 i.GetGenericTypeDefinition() == typeof(IMapWith<>)))
                 .ToList();
 
@@ -25,7 +26,7 @@ namespace SchoolApp.Application.Common.Mappings
             {
                 var instance = Activator.CreateInstance(item);
                 var methodInfo = item.GetMethod("Mapping");
-
+                
                 methodInfo?.Invoke(instance, new object[] { this });
             }
         }
