@@ -22,9 +22,12 @@
     <Folder Include="Models\Addresses\Commands\CreateAddress\" />
     <Folder Include="Models\Cities\Commands\" />
     <Folder Include="Models\Countries\Commands\" />
+    <Folder Include="Models\DaysOfWeeks\Commands\" />
     <Folder Include="Models\Employees\Commands\DeleteEmployee\" />
     <Folder Include="Models\Employees\Commands\CreateEmployee\" />
     <Folder Include="Models\Employees\Commands\UpdateEmployee\" />
+    <Folder Include="Models\Subjects\Commands\" />
+    <Folder Include="Models\TimeSubjects\Commands\" />
     <Folder Include="Models\Users\Commands\DeleteUser\" />
     <Folder Include="Models\Users\Commands\UpdateUser\" />
   </ItemGroup>
