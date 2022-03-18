@@ -22,7 +22,7 @@ namespace SchoolApp.Application.Models.DaysOfWeeks.Queries.GetDayOfWeek
         private readonly ISchoolDbContext _schoolDb;
 
         public GetDayOfWeekQueryHandler(IMapper mapper, ISchoolDbContext schoolDb) =>
-            (_mapper, schoolDb) = (mapper, schoolDb);
+            (_mapper, _schoolDb) = (mapper, schoolDb);
 
         public async Task<IEnumerable<DayOfWeekDetailsVm>> Handle(GetDayOfWeekQuery request, CancellationToken cancellationToken)
         {

@@ -13,8 +13,8 @@ namespace SchoolApp.Application.Models.TimeSubjects.Queries.GetTimeSubjectDetail
     {
         public int ID { get; set; }
 
-        public DateTime Begin { get; set; }
-        public DateTime End { get; set; }
+        public string Begin { get; set; }
+        public string End { get; set; }
 
         public void Mapping(Profile profile)
         {
