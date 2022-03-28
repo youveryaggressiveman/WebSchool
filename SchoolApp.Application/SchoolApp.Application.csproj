@@ -26,6 +26,7 @@
     <Folder Include="Models\Employees\Commands\DeleteEmployee\" />
     <Folder Include="Models\Employees\Commands\CreateEmployee\" />
     <Folder Include="Models\Employees\Commands\UpdateEmployee\" />
+    <Folder Include="Models\Schedules\Commands\" />
     <Folder Include="Models\Subjects\Commands\" />
     <Folder Include="Models\TimeSubjects\Commands\" />
     <Folder Include="Models\Users\Commands\DeleteUser\" />
